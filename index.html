@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Friend Piano</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Friend Piano</h1>
+    <p>Use your mouse or keyboard to play.</p>
+
+    <div class="layout">
+      <section class="piano-wrap">
+        <div class="piano">
+          <button class="key white" id="c-key" data-note="c">A</button>
+          <button class="key black" id="c-sharp-key" data-note="c-sharp">W</button>
+          <button class="key white" id="d-key" data-note="d">S</button>
+          <button class="key black" id="d-sharp-key" data-note="d-sharp">E</button>
+          <button class="key white" id="e-key" data-note="e">D</button>
+          <button class="key white" id="f-key" data-note="f">F</button>
+          <button class="key black" id="f-sharp-key" data-note="f-sharp">T</button>
+          <button class="key white" id="g-key" data-note="g">G</button>
+          <button class="key black" id="g-sharp-key" data-note="g-sharp">Y</button>
+          <button class="key white" id="a-key" data-note="a">H</button>
+          <button class="key black" id="a-sharp-key" data-note="a-sharp">U</button>
+          <button class="key white" id="b-key" data-note="b">J</button>
+          <button class="key white" id="high-c-key" data-note="c2">K</button>
+        </div>
+      </section>
+
+      <aside class="song-box">
+        <h2>Happy Birthday</h2>
+
+        <div id="lyrics" class="lyrics">
+          <div class="column" id="column-one">
+            <div id="word-one">HAP-</div>
+            <div id="letter-note-one">G</div>
+          </div>
+          <div class="column" id="column-two">
+            <div id="word-two">PY</div>
+            <div id="letter-note-two">G</div>
+          </div>
+          <div class="column" id="column-three">
+            <div id="word-three">BIRTH-</div>
+            <div id="letter-note-three">A</div>
+          </div>
+          <div class="column" id="column-four">
+            <div id="word-four">DAY</div>
+            <div id="letter-note-four">G</div>
+          </div>
+          <div class="column" id="column-five">
+            <div id="word-five">TO</div>
+            <div id="letter-note-five">C</div>
+          </div>
+          <div class="column" id="column-six">
+            <div id="word-six">YOU!</div>
+            <div id="letter-note-six">B</div>
+          </div>
+          <div class="column column-optional" id="column-optional">
+            <div id="word-optional">-END</div>
+            <div id="letter-note-optional">A</div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="first-next-line">Line 2</button>
+          <button id="second-next-line">Line 3</button>
+          <button id="third-next-line">Line 4</button>
+          <button id="fourth-next-line">Reset</button>
+        </div>
+      </aside>
+    </div>
+
+    <script src="script.js"></script>
+  </main>
+</body>
+</html>
